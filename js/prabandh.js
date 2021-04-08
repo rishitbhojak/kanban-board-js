@@ -2,7 +2,7 @@ let order = 1;
 let adding = false;
 
 const error = document.querySelector('.error');
-const message = 'Please add a description.';
+const message = 'Please add a description!';
 
 const add_btn = document.querySelector('.add');
 add_btn.addEventListener('click', () => {
@@ -16,6 +16,11 @@ add_btn.addEventListener('click', () => {
 });
 
 const create_item = () => {
+
+    let item = document.createElement("div");
+    item.classList.add('item');
+  item.id = 'item-' + order;
+  
 };
 
 document.querySelectorAll('.drop').forEach(element => {

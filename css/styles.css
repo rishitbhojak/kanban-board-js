@@ -2,26 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #F69C7E;
+  color: #f69c7e;
 }
 
-header, footer {
-  background-color: #F05A28;
-  height: 60px;
+.board {
+  display: flex;
   justify-content: center;
+}
+
+header,
+footer {
+  /* background-color: #053e50;
+   */
+  /* background-color: #ec008c; */
+  /* background: #0197EE;
+   background: -webkit-linear-gradient(left, #0197EE, #01FFE1);
+   background: -moz-linear-gradient(left, #0197EE, #01FFE1);
+   background: linear-gradient(to right, #0197EE, #01FFE1); */
+  background: #053f50;
+  background: -webkit-linear-gradient(left, #053f50, #10a693);
+  background: -moz-linear-gradient(left, #053f50, #10a693);
+  background: linear-gradient(to right, #053f50, #10a693);
+  height: 90px;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
 header h1 {
   font-size: 36px;
   padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 footer span {
@@ -37,11 +55,11 @@ footer span {
 }
 
 .list {
-  width: 250px;
-  border: 1px solid #F69C7E;
+  max-width: fit-content;
+  border: 8px solid #10a693;
   margin: 20px;
   border-radius: 10px;
-  color: #F69C7E;
+  color: #363636;
 }
 
 .list .title {
@@ -51,11 +69,12 @@ footer span {
 
 .list .item {
   padding: 5px;
-  border-bottom: 1px solid #F69C7E;
+  border-bottom: 2px solid#10A693;
 }
 
-.list input, button {
-  color: #F69C7E;
+.list input,
+button {
+  color: #f69c7e;
   margin-left: 5px;
 }
 
@@ -66,7 +85,7 @@ footer span {
 .heading {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid #F69C7E;
+  border-bottom: 2px solid #10a693;
 }
 
 .heading .title {
@@ -78,6 +97,21 @@ footer span {
   cursor: pointer;
 }
 
+.add {
+  margin-right: 8px;
+}
 .error {
-  color: red;
+  font-size: larger;
+  color: white;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orange::-moz-selection {
+  background-color: #FF8C00;
+}
+.orange::selection {
+  background-color:#FF8C00;
 }
