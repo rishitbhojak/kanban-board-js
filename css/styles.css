@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  color: #f69c7e;
+  color: #000000;
 }
 
 .board {
@@ -19,13 +19,6 @@ body {
 
 header,
 footer {
-  /* background-color: #053e50;
-   */
-  /* background-color: #ec008c; */
-  /* background: #0197EE;
-   background: -webkit-linear-gradient(left, #0197EE, #01FFE1);
-   background: -moz-linear-gradient(left, #0197EE, #01FFE1);
-   background: linear-gradient(to right, #0197EE, #01FFE1); */
   background: #053f50;
   background: -webkit-linear-gradient(left, #053f50, #10a693);
   background: -moz-linear-gradient(left, #053f50, #10a693);
@@ -74,7 +67,7 @@ footer span {
 
 .list input,
 button {
-  color: #f69c7e;
+  color: #053f50;
   margin-left: 5px;
 }
 
@@ -97,6 +90,14 @@ button {
   cursor: pointer;
 }
 
+#btn {
+  display: flex;
+  font-size: 16px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+ cursor: pointer;
+}
 .add {
   margin-right: 8px;
 }
@@ -110,8 +111,8 @@ button {
 }
 
 .orange::-moz-selection {
-  background-color: #FF8C00;
+  background-color: #ff8c00;
 }
 .orange::selection {
-  background-color:#FF8C00;
+  background-color: #ff8c00;
 }
